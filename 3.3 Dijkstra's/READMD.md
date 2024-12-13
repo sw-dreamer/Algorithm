@@ -1,6 +1,8 @@
 # Dijkstra's Algorithm
 
-Dijkstra's Algorithm은 그래프에서 두 정점 간의 최단 경로를 찾는 알고리즘입니다. 이 알고리즘은 1956년에 Edsger Dijkstra에 의해 제안되었으며, 주로 가중치가 있는 방향 그래프에서 사용됩니다.
+Dijkstra's Algorithm은 그래프에서 두 정점 간의 최단 경로를 찾는 알고리즘입니다.
+
+이 알고리즘은 1956년에 Edsger Dijkstra에 의해 제안되었으며, 주로 가중치가 있는 방향 그래프에서 사용됩니다.
 
 ## 📌 주요 개념
 
