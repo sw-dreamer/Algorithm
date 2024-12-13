@@ -28,6 +28,7 @@ Dijkstra's Algorithm은 그래프에서 두 정점 간의 최단 경로를 찾�
 
 ## 📊 예시
 
+![sw_dreamer_DijkstraGraph](https://github.com/user-attachments/assets/c97d9ff9-8d87-4883-a2d9-88b201e18429)
 
 ## 예제 그래프 설명
 
