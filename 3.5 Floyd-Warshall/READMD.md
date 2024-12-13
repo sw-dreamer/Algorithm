@@ -40,7 +40,7 @@
 
 ## 알고리즘 동작 원리
 
-![sw_dreamer_FloydWarshall](https://github.com/user-attachments/assets/78d29950-97f7-4ad0-a147-783ce26ae0b7)
+![sw_dreamer_FloydWarshall](https://github.com/user-attachments/assets/3dcfdaac-58b4-4343-9630-685e93f02b53)
 
 ## 1. 초기 그래프 표현
 
