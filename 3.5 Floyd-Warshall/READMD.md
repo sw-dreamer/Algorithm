@@ -37,9 +37,10 @@
 - 그래프에 음수 가중치 사이클이 존재하면 알고리즘이 실패할 수 있습니다.
 
 
-![sw_dreamer_FloydWarshall](https://github.com/user-attachments/assets/78d29950-97f7-4ad0-a147-783ce26ae0b7)
 
 ## 알고리즘 동작 원리
+
+![sw_dreamer_FloydWarshall](https://github.com/user-attachments/assets/78d29950-97f7-4ad0-a147-783ce26ae0b7)
 
 ## 1. 초기 그래프 표현
 
