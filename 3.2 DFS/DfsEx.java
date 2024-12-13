@@ -2,7 +2,7 @@ package algorithm;
 
 import java.util.*;
 
-public class DFS {
+public class DfsEx {
 	// 그래프 클래스 정의 (인접 리스트 방식)
 	static class Graph {
 		private Map<String, List<String>> adjacencyList;
