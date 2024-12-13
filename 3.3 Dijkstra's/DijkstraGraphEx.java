@@ -37,7 +37,7 @@ public class DijkstraGraphEx{
 
         // 결과 출력
         System.out.println("노드 " + start + "에서 각 노드까지의 최단 거리:");
-        for (int i = 1; i < n; i++) {
+        for (int i = start; i < n; i++) {
             System.out.println("노드 " + i + "까지의 최소 가중치 의 합 : " + distances[i]);
         }
     }
