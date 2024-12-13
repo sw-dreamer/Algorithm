@@ -2,7 +2,7 @@ package algorithm;
 
 import java.util.*;
 
-public class BFS {
+public class BfsEx {
     
     // 그래프의 크기 (노드 수)
     private int V;
