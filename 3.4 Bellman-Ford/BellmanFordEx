@@ -1,0 +1,71 @@
+package algorithm;
+
+import java.util.Arrays;
+
+public class BellmanFordEx {
+
+    // 벨만-포드 알고리즘 구현
+    public static void bellmanFord(int V, int[][] edges, int start) {
+        // 1. 거리 배열 초기화 (무한대 값으로 설정)
+        int[] dist = new int[V];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        dist[start] = 0;
+
+        // 2. V-1번의 간선 완화
+        for (int i = 1; i < V; i++) {
+            for (int[] edge : edges) {
+                int u = edge[0];  // 출발 정점
+                int v = edge[1];  // 도착 정점
+                int weight = edge[2];  // 가중치
+                
+                // 출발점 u에서 도달할 수 있고, dist[u] + weight < dist[v]라면 dist[v]를 갱신
+                if (dist[u] != Integer.MAX_VALUE && dist[u] + weight < dist[v]) {
+                    dist[v] = dist[u] + weight;
+                }
+            }
+        }
+
+        // 3. 음수 사이클 검출
+        for (int[] edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            int weight = edge[2];
+            
+            if (dist[u] != Integer.MAX_VALUE && dist[u] + weight < dist[v]) {
+                System.out.println("음수 사이클이 존재합니다.");
+                return;
+            }
+        }
+
+        // 4. 최단 거리 출력
+        System.out.println("최단 거리:");
+        for (int i = 0; i < V; i++) {
+            if (dist[i] == Integer.MAX_VALUE) {
+                System.out.println(i + " : ∞");
+            } else {
+                System.out.println(i + " : " + dist[i]);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        // 그래프 간선 리스트 정의 (u, v, weight)
+        // 예: (0, 1, -1) -> 0번 정점에서 1번 정점으로 -1의 가중치 간선이 있음
+        int[][] edges = {
+            {0, 1, -1},
+            {0, 2, 4},
+            {1, 2, 3},
+            {1, 3, 2},
+            {1, 4, 2},
+            {3, 2, 5},
+            {3, 1, 1},
+            {4, 3, -3}
+        };
+
+        int V = 5;  // 정점의 개수
+        int start = 0;  // 출발 정점
+
+        // 벨만-포드 알고리즘 실행
+        bellmanFord(V, edges, start);
+    }
+}
