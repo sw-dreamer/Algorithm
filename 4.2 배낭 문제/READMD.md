@@ -15,7 +15,11 @@
 
 수학적으로는 다음과 같이 표현됩니다
 
-maximize ∑ values[i] * x[i] subject to ∑ weights[i] * x[i] ≤ W x[i] ∈ {0, 1} for all i
+  $$
+   \maximize ∑ values[i] * x[i] subject to ∑ weights[i] * x[i] ≤ W x[i] ∈ {0, 1} for all i
+   $$
+   
+
 
 여기서 `x[i]`는 물건 `i`가 배낭에 포함되면 `1`, 그렇지 않으면 `0`입니다.
 
