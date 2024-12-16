@@ -16,7 +16,7 @@
 수학적으로는 다음과 같이 표현됩니다
 
   $$
-   \maximize ∑ values[i] * x[i] subject to ∑ weights[i] * x[i] ≤ W x[i] ∈ {0, 1} for all i
+   maximize ∑ values[i] * x[i] subject to ∑ weights[i] * x[i] ≤ W x[i] ∈ {0, 1} for all i
    $$
    
 
