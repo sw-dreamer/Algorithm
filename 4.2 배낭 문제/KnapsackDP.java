@@ -1,3 +1,10 @@
+## 설명
+    - knapsack 함수는 동적 계획법을 사용하여 2D 배열 dp[i][w]를 구성합니다.
+    - i는 물건의 개수를 나타내고, w는 배낭의 용량입니다.
+    - 각 물건에 대해 배낭에 담을지 말지를 결정하면서 최적의 가치를 계산합니다.
+    - dp[n][W]에 최종적으로 최대 가치를 저장합니다.
+
+```
 public class KnapsackDP {
 
     // 0/1 배낭 문제를 해결하는 동적 계획법 함수
@@ -30,3 +37,5 @@ public class KnapsackDP {
         System.out.println("최대 가치: " + maxValue);  // 출력: 7
     }
 }
+
+```
