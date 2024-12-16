@@ -4,7 +4,7 @@
 //     - 각 물건에 대해 배낭에 담을지 말지를 결정하면서 최적의 가치를 계산합니다.
 //     - dp[n][W]에 최종적으로 최대 가치를 저장합니다.
 
-```
+
 public class KnapsackDP {
 
     // 0/1 배낭 문제를 해결하는 동적 계획법 함수
@@ -37,4 +37,4 @@ public class KnapsackDP {
         System.out.println("최대 가치: " + maxValue);  // 출력: 7
     }
 }
-```
+
