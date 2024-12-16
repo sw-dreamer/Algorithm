@@ -14,10 +14,9 @@
 - **목표**: 물건을 배낭에 담아서 총 가치가 최대가 되도록 물건을 선택하되, 배낭의 용량을 초과할 수 없습니다.
 
 수학적으로는 다음과 같이 표현됩니다
-
   $$
-   maximize ∑ values[i] * x[i] subject to ∑ weights[i] * x[i] ≤ W x[i] ∈ {0, 1}  for  all  i
-   $$
+  maximize ∑ values[i] * x[i] subject to ∑ weights[i] * x[i] ≤ W x[i] ∈ {0, 1}  for  all  i
+  $$
    
 
 
