@@ -40,7 +40,9 @@ public class StackExample {
 }
 ```
 #### 출력
+```
 Top element: 30
 Popped element: 30
 Popped element: 20
 Is stack empty? false
+```
